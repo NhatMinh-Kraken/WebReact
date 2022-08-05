@@ -2,6 +2,7 @@ import  express, { request }  from "express";
 import bodyParser from "body-parser";
 import viewEngine from "./Config/ViewEngine";
 import initWebRoutes from './Route/Web';
+import connectDB from './Config/ConnectDB';
 
 require('dotenv').config();
 
@@ -15,6 +16,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 viewEngine(app);
 initWebRoutes(app);
+
+connectDB();
 
 let port = process.env.PORT || 2626;
 //PORT === underfined => port = 2626

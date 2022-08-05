@@ -1,9 +1,16 @@
+import db from '../models/index';
 
-let getHomePage = (rep, res) =>{
-    return res.render('Index.ejs');
+let getHomePage = async(req, res) =>{
+    
+    try {
+        let data = await db.User.findAll();
+        return res.render('Index.ejs',{data:data});
+    } catch (e) {
+        console.log(e)
+    }
 }
 
-let getAboutPage = (rep, res) =>{
+let getAboutPage = (req, res) =>{
     return res.render('Text/About.ejs');
 }
 
