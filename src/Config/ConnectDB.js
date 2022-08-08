@@ -3,6 +3,7 @@ const { Sequelize } = require('sequelize');
 // Option 3: Passing parameters separately (other dialects)
 const sequelize = new Sequelize('mysql-car2', 'root', null, {
   host: 'localhost',
+  port: 3306,
   dialect: 'mysql',
   logging:false
 });
@@ -16,4 +17,4 @@ let connectDB = async() =>{
         console.error('Unable to connect to the database:', error);
       }
 }
-module.exports = connectDB;
+module.exports = connectDB; 
