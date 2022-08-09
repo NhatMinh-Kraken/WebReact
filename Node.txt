@@ -15,4 +15,5 @@ file Public -> ảnh
 .env example -> file đẩy lên git
 .gitignore -> quy định file đẩy lên git
 
+mới
 
