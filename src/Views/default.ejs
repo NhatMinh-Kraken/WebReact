@@ -17,7 +17,7 @@
                             <label for="inputEmail4">Email</label>
                             <input type="email" class="form-control"
                                 id="inputEmail4" name="Email"
-                                placeholder="Email" value="<%=
+                                placeholder="Email" readonly value="<%=
                                 dataTable[i].Email %>">
                         </div>
                     </div>
@@ -26,14 +26,14 @@
                             <label for="inputFirstNamel4">First Name</label>
                             <input type="text" class="form-control"
                                 id="inputFirstNamel4" name="FristName"
-                                placeholder="First Name" value="<%=
+                                placeholder="First Name" readonly value="<%=
                                 dataTable[i].FirstName %>">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputLastNamel4">Last Name</label>
                             <input type="text" class="form-control"
                                 id="inputLastNamel4" name="LastName"
-                                placeholder="Last Name" value="<%=
+                                placeholder="Last Name" readonly value="<%=
                                 dataTable[i].LastName %>">
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                         <input type="text" class="form-control"
                             id="inputAddress"
                             name="Address"
-                            placeholder="1234 Main St" value="<%=
+                            placeholder="1234 Main St" readonly value="<%=
                             dataTable[i].Address %>">
                     </div>
                     <div class="form-row">
@@ -50,13 +50,13 @@
                             <label for="inputPhoneNumber">Phone Number</label>
                             <input type="text" class="form-control"
                                 id="inputPhoneNumber" name="PhoneNumber"
-                                placeholder="+84..." value="<%=
+                                placeholder="+84..." readonly value="<%=
                                 dataTable[i].PhoneUser %>">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputRender">Sex</label>
                             <select id="inputRender" class="form-control"
-                                name="Render">
+                                name="Render" readonly>
                                 <option value="<%= dataTable[i].Gender %>"><%=
                                         dataTable[i].Gender === '1' ? "Male" :
                                         "Female" %></option>
@@ -65,18 +65,22 @@
                             <div class="form-group col-md-2">
                                 <label for="inputRole">Role</label>
                                 <select id="inputRole" class="form-control"
-                                    name="Role">
+                                    name="Role" readonly>
                                     <option value="<%= dataTable[i].RoleId %>"><%=
                                             dataTable[i].RoleId === '1' ?
                                             "Admin" : "Custom" %></option>
-                                </select>
+                                    </select>
+                                </div>
                             </div>
+                            <a href="/edit-crud?id=<%= dataTable[i].id %>"
+                                type="submit" class="btn
+                                btn-warning"
+                                name="SubmitEdit">Edit</a>
+                            <button type="submit" class="btn btn-danger"
+                                name="SubmitDelete">Delete</button>
+                        </form>
+                        <% }%>
                         </div>
-                            <!-- <button type="submit" class="btn btn-primary" name="Submit">Sign
-                    in</button> -->
-                    </form>
-                    <% }%>
-                </div>
 
 
                         <!-- jQuery library -->

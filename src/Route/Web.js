@@ -10,6 +10,8 @@ let initWebRoutes = (app) => {
 
     router.post("/post-crud", homecontroler.postCRUD);
     router.get("/def-crud", homecontroler.displayCrud);
+    router.get("/edit-crud", homecontroler.editCRUD);
+    router.post("/Update-Crud", homecontroler.UpdateCrud);
     return app.use("/", router)
 }
 
