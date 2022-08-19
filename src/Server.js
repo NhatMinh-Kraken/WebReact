@@ -1,4 +1,4 @@
-import  express, { request }  from "express";
+import express, { request } from "express";
 import bodyParser from "body-parser";
 import viewEngine from "./Config/ViewEngine";
 import initWebRoutes from './Route/Web';
@@ -21,7 +21,7 @@ connectDB();
 
 let port = process.env.PORT || 2626;
 //PORT === underfined => port = 2626
-app.listen(port, () =>{
+app.listen(port, () => {
     //callback
     console.log("Backend" + port)
 })

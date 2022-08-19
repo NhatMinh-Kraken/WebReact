@@ -1,4 +1,4 @@
-import  express  from "express";
+import express from "express";
 import homecontroler from "../Controller/HomeController";
 
 let router = express.Router();
