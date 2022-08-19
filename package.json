@@ -56,7 +56,6 @@
     "safe-buffer": "^5.2.1",
     "safer-buffer": "^2.1.2",
     "send": "^0.18.0",
-    "sequelize": "^6.6.2",
     "serve-static": "^1.15.0",
     "setprototypeof": "^1.2.0",
     "side-channel": "^1.0.4",
@@ -90,6 +89,7 @@
     "@babel/preset-env": "^7.12.10",
     "css-loader": "^6.7.1",
     "nodemon": "^2.0.7",
-    "sequelize-cli": "^6.2.0"
+    "sequelize": "^6.21.4",
+    "sequelize-cli": "^6.4.1"
   }
 }

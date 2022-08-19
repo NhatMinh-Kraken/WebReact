@@ -28,16 +28,13 @@ module.exports = {
         type: Sequelize.TEXT
       },
       Gender: {
-        type: Sequelize.BOOLEAN
-      },
-      TypeRoleUser: {
-        type: Sequelize.STRING
-      },
-      KeyRoleUser: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(2)
       },
       ImageUser: {
         type: Sequelize.STRING
+      },
+      RoleId: {
+        type: Sequelize.STRING(2)
       },
       CreatedAt: {
         allowNull: false,

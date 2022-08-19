@@ -9,9 +9,8 @@ module.exports = {
             PhoneUser: '0396764757',
             Address: 'Bình Dương',
             Gender: 1,
-            TypeRoleUser: 'ROLE',
-            KeyRoleUser: 'R1',
             ImageUser: 'sa',
+            RoleId: 1,
             CreatedAt: new Date(),
             UpdatedAt: new Date()
         }]);
