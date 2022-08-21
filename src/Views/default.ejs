@@ -76,8 +76,10 @@
                                 type="submit" class="btn
                                 btn-warning"
                                 name="SubmitEdit">Edit</a>
-                            <button type="submit" class="btn btn-danger"
-                                name="SubmitDelete">Delete</button>
+                            <a href="/delete-crud?id=<%= dataTable[i].id %>"
+                                type="submit" class="btn
+                                btn-danger"
+                                name="SubmitDelete">Delete</a>
                         </form>
                         <% }%>
                         </div>
