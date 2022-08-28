@@ -1,4 +1,4 @@
-import bcrypt from 'bcryptjs';
+import bcrypt from 'bcryptjs'; // hash password
 import db from '../models/index';
 
 const salt = bcrypt.genSaltSync(10);
